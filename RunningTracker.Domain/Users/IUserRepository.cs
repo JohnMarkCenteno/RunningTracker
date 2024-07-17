@@ -4,9 +4,8 @@ namespace RunningTracker.Domain.Users
 {
     public interface IUserRepository
     {
-        Task<IEnumerable<User>> GetUserRunningActivitiesAsync(Guid userId);
-        Task<User> GetByIdAsync(Guid id);
+        Task<User?> GetByIdAsync(Guid id);
+        Task<IEnumerable<User>> GetUsersAsync();
         void Add(User user);
-        void AddRunninActivity(Guid userId, RunningActivity runningActivity);
     }
 }

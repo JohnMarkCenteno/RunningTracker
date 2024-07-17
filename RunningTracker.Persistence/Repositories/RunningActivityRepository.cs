@@ -1,4 +1,5 @@
-﻿using RunngTracker.Persistence;
+﻿using Microsoft.EntityFrameworkCore;
+using RunngTracker.Persistence;
 using RunningTracker.Domain.Activities;
 
 namespace RunningTracker.Persistence.Repositories
@@ -7,17 +8,21 @@ namespace RunningTracker.Persistence.Repositories
     {
         public void Add(RunningActivity runningActivity)
         {
-            throw new NotImplementedException();
+            context.RunningActivities.Add(runningActivity);
         }
 
-        public Task<RunningActivity> GetByIdAsync(Guid id)
+        public async Task<RunningActivity?> GetByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await context.RunningActivities
+                .FirstOrDefaultAsync(u => u.Id == id);
         }
 
-        public Task<IEnumerable<RunningActivity>> GetUserRunningActivitiesAsync(Guid userId)
+        public async Task<IEnumerable<RunningActivity>> GetUserRunningActivitiesAsync(Guid userId)
         {
-            throw new NotImplementedException();
+            return await context.RunningActivities
+                .Include(e => e.User)
+                .Where(u => u.UserId == userId)
+                .ToListAsync();
         }
     }
 }

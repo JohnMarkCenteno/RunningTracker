@@ -1,3 +1,4 @@
+using RunningTracker.Api.Extensions;
 using RunningTracker.Application;
 using RunningTracker.Persistence;
 
@@ -15,6 +16,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseSeedData();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

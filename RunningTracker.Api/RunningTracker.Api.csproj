@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\RunningTracker.Application\RunningTracker.Application.csproj" />
     <ProjectReference Include="..\RunningTracker.Persistence\RunningTracker.Persistence.csproj" />
   </ItemGroup>

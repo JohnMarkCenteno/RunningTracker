@@ -24,7 +24,7 @@ namespace RunngTracker.Persistence
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseInMemoryDatabase("SchedulerDatabase");
+                optionsBuilder.UseInMemoryDatabase("RunningActivityDatabase");
             }
         }
 
