@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Api", "RunningTracker.Api\RunningTracker.Api.csproj", "{4D8CD3A8-7FC5-4125-917D-763A1C931E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTracker.Api", "RunningTracker.Api\RunningTracker.Api.csproj", "{4D8CD3A8-7FC5-4125-917D-763A1C931E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Domain", "RunningTracker.Domain\RunningTracker.Domain.csproj", "{C7505D90-481A-4116-826A-004025384EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Infrastructure", "RunningTracker.Infrastructure\RunningTracker.Infrastructure.csproj", "{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4D8CD3A8-7FC5-4125-917D-763A1C931E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D8CD3A8-7FC5-4125-917D-763A1C931E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D8CD3A8-7FC5-4125-917D-763A1C931E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7505D90-481A-4116-826A-004025384EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7505D90-481A-4116-826A-004025384EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7505D90-481A-4116-826A-004025384EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7505D90-481A-4116-826A-004025384EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
