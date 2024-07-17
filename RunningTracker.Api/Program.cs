@@ -1,6 +1,13 @@
+using RunningTracker.Application;
+using RunningTracker.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+var configuration = builder.Configuration;
 
 // Add services to the container.
+services.AddPersistence(configuration);
+services.AddApplication(configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

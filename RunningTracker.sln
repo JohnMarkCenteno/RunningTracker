@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Domain", "Ru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Infrastructure", "RunningTracker.Infrastructure\RunningTracker.Infrastructure.csproj", "{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTracker.Persistence", "RunningTracker.Persistence\RunningTracker.Persistence.csproj", "{1F20B1D0-4CA5-432E-993D-926ED44768C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Application", "RunningTracker.Application\RunningTracker.Application.csproj", "{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F20B1D0-4CA5-432E-993D-926ED44768C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F20B1D0-4CA5-432E-993D-926ED44768C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F20B1D0-4CA5-432E-993D-926ED44768C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F20B1D0-4CA5-432E-993D-926ED44768C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,7 @@ namespace RunningTracker.Domain.Activities
         public double Distance { get; set; }
         public double Duration => (EndTime - StartTime).TotalMinutes;
         public double AveragePace => Duration / Distance;
-        public int UserProfileId { get; set; }
+        public Guid UserId { get; set; }
         public required User User { get; set; }
     }
 }
