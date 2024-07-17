@@ -3,6 +3,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RunngTracker.Persistence;
 using RunningTracker.Application.Abstractions.Data;
+using RunningTracker.Domain.Activities;
+using RunningTracker.Domain.Users;
+using RunningTracker.Persistence.Repositories;
 
 namespace RunningTracker.Persistence
 {
@@ -18,8 +21,8 @@ namespace RunningTracker.Persistence
             services.AddScoped<IApplicationDbContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
             services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ApplicationDbContext>());
 
-            // todo services.AddScoped<IUserRepository, UserRepository>();
-            // todo services.AddScoped<IRunningActivityRepository, RunningActivityRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRunningActivityRepository, RunningActivityRepository>();
 
             return services;
         }
