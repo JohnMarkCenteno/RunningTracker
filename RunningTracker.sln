@@ -5,13 +5,21 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTracker.Api", "RunningTracker.Api\RunningTracker.Api.csproj", "{4D8CD3A8-7FC5-4125-917D-763A1C931E0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Domain", "RunningTracker.Domain\RunningTracker.Domain.csproj", "{C7505D90-481A-4116-826A-004025384EC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTracker.Domain", "RunningTracker.Domain\RunningTracker.Domain.csproj", "{C7505D90-481A-4116-826A-004025384EC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Infrastructure", "RunningTracker.Infrastructure\RunningTracker.Infrastructure.csproj", "{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTracker.Infrastructure", "RunningTracker.Infrastructure\RunningTracker.Infrastructure.csproj", "{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTracker.Persistence", "RunningTracker.Persistence\RunningTracker.Persistence.csproj", "{1F20B1D0-4CA5-432E-993D-926ED44768C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Application", "RunningTracker.Application\RunningTracker.Application.csproj", "{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTracker.Application", "RunningTracker.Application\RunningTracker.Application.csproj", "{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{6413ACA8-B1F8-4A5F-B727-17D665528FB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7635464F-7D8F-4794-B745-DA195C76C32C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Application.Tests", "RunningTracker.Application.Tests\RunningTracker.Application.Tests.csproj", "{1243AA8C-53E9-40E3-93DB-81C0EA0267B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTracker.Api.Tests", "RunningTracker.Api.Tests\RunningTracker.Api.Tests.csproj", "{7F4EA281-1CB0-400F-8D9A-C11DD6CB6C48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +47,26 @@ Global
 		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1243AA8C-53E9-40E3-93DB-81C0EA0267B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1243AA8C-53E9-40E3-93DB-81C0EA0267B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1243AA8C-53E9-40E3-93DB-81C0EA0267B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1243AA8C-53E9-40E3-93DB-81C0EA0267B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4EA281-1CB0-400F-8D9A-C11DD6CB6C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4EA281-1CB0-400F-8D9A-C11DD6CB6C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4EA281-1CB0-400F-8D9A-C11DD6CB6C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4EA281-1CB0-400F-8D9A-C11DD6CB6C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D8CD3A8-7FC5-4125-917D-763A1C931E0E} = {6413ACA8-B1F8-4A5F-B727-17D665528FB2}
+		{C7505D90-481A-4116-826A-004025384EC2} = {6413ACA8-B1F8-4A5F-B727-17D665528FB2}
+		{D70A4021-C212-49FD-9CF7-3CEFA4A5B1E4} = {6413ACA8-B1F8-4A5F-B727-17D665528FB2}
+		{1F20B1D0-4CA5-432E-993D-926ED44768C0} = {6413ACA8-B1F8-4A5F-B727-17D665528FB2}
+		{8B33F4A2-FF60-46A0-86C6-BCC62B3B5DD4} = {6413ACA8-B1F8-4A5F-B727-17D665528FB2}
+		{1243AA8C-53E9-40E3-93DB-81C0EA0267B2} = {7635464F-7D8F-4794-B745-DA195C76C32C}
+		{7F4EA281-1CB0-400F-8D9A-C11DD6CB6C48} = {7635464F-7D8F-4794-B745-DA195C76C32C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D11B0B0-C120-4D86-85CB-AD40A24FEC8F}
