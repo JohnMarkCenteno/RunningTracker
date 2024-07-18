@@ -4,6 +4,9 @@ namespace RunningTracker.Domain.Users
 {
     public static class UserErrors
     {
+        public static Error SaveFailure() => new(
+            "Users.SaveFailure", $"Failed to save User.");
+
         public static Error NotFound(Guid id) => new(
             "Users.NotFound", $"User with the Id = '{id}' was not found.");
 

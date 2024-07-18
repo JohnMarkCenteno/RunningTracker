@@ -22,10 +22,17 @@ namespace RunningTracker.Application.Users.AddUser
                 BirthDate = request.BirthDate,
             };
 
-            userRepository.Add(user);
-            await unitOfWork.SaveChangesAsync(cancellationToken);
+            try
+            {
+                userRepository.Add(user);
+                await unitOfWork.SaveChangesAsync(cancellationToken);
 
-            return Result.Success(user);
+                return Result.Success(user);
+            }
+            catch
+            {
+                return Result.Failure<UserResponse>(UserErrors.SaveFailure());
+            }
         }
     }
 }
