@@ -2,5 +2,6 @@
 {
     public static partial class ApplicationBuilderExtensions
     {
+        // See child partial classes
     }
 }

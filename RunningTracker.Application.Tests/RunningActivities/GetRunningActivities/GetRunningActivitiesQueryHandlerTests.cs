@@ -14,8 +14,7 @@ namespace RunningTracker.Application.Tests.RunningActivities.GetRunningActivitie
             var userId = Guid.NewGuid();
             var activities = new List<RunningActivity>
             {
-                new RunningActivity
-                {
+                new() {
                     Id = Guid.NewGuid(),
                     Location = "Park",
                     StartTime = DateTime.UtcNow,

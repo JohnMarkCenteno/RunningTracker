@@ -1,6 +1,4 @@
-﻿
-
-using RunningTracker.Infrastructure.Shared;
+﻿using RunningTracker.Infrastructure.Shared;
 
 namespace RunningTracker.Domain.Activities
 {

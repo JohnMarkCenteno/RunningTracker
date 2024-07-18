@@ -1,7 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using RunningTracker.Api.Models;
-using RunningTracker.Application.RunningActivities.GetRunningActivities;
 using RunningTracker.Application.Users.AddUser;
 using RunningTracker.Application.Users.GetUser;
 using RunningTracker.Application.Users.GetUsers;
